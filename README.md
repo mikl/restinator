@@ -1,8 +1,8 @@
 # Restinator
 
-This README outlines the details of collaborating on this Ember application.
+Restinator is intended to be a REST client/testing tool.
 
-A short introduction of this app could easily go here.
+Pull requests/bug reports are welcome.
 
 ## Prerequisites
 
@@ -13,7 +13,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/mikl/restinator.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
