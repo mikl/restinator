@@ -1,12 +1,6 @@
 <form>
-  <label>
-    Protocol
-    {{input valueBinding="protocol" size=2}}://
-  </label>
-  <label>
-    URL
-    {{input valueBinding="url"}}
-  </label>
+  {{protocol-selector protocol=protocol}}
+  {{input valueBinding="url" placeholder="example.com/test.json"}}
 
   <button>
     Send
