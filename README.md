@@ -1,4 +1,4 @@
-# Restinator
+# Restinator [![Build Status](https://travis-ci.org/mikl/restinator.svg?branch=master)](https://travis-ci.org/mikl/restinator)
 
 Restinator is intended to be a REST client/testing tool.
 
