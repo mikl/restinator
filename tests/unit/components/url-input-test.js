@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleForComponent('protocol-selector', 'ProtocolSelectorComponent', {
+moduleForComponent('url-input', 'UrlInputComponent', {
   // specify the other units that are required for this test
   // needs: ['component:foo', 'helper:bar']
 });
