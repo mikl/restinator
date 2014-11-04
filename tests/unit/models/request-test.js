@@ -6,7 +6,7 @@ import {
 
 moduleForModel('request', 'Request', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: ['model:request-header']
 });
 
 test('it exists', function() {

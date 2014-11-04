@@ -4,5 +4,6 @@ export default DS.Model.extend({
   protocol: DS.attr('string', {
     defaultValue: 'http',
   }),
-  url: DS.attr('string')
+  url: DS.attr('string'),
+  headers: DS.hasMany('request-header')
 });
