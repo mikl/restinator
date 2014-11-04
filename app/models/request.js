@@ -21,5 +21,7 @@ export default DS.Model.extend({
         request: this
       });
     }, this);
+
+    return this;
   }
 });
