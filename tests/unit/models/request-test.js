@@ -25,3 +25,15 @@ test('default protocol is http', function() {
 
   ok(instance.get('protocol') === 'http');
 });
+
+test('adding default headers gives three headers', function() {
+  var store = this.store();
+  var instance;
+
+  Ember.run(function() {
+    instance = store.createRecord('request');
+    instance.addDefaultHeaders();
+  });
+
+  equal(instance.get('headers.length'), 3);
+});
