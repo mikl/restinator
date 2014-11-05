@@ -1,6 +1,11 @@
 <form>
   {{url-input protocol=protocol url=url}}
 
+  <fieldset>
+    <legend>Headers</legend>
+    {{request-header-input request=model}}
+  </fieldset>
+
   <button>
     Send
   </button>

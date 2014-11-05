@@ -1,0 +1,22 @@
+<table class="request-header-input">
+  <thead>
+    <tr>
+      <th class="name">Name</th>
+      <th class="value">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each request.headers}}
+      <tr>
+        <td class="name">
+          {{input valueBinding="name"}}
+        </td>
+        <td class="value">
+          {{input valueBinding="value"}}
+        </td>
+      </tr>
+    {{/each}}
+
+  </tbody>
+</table>
