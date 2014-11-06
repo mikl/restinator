@@ -10,10 +10,10 @@
     {{#each request.headers}}
       <tr>
         <td class="name">
-          {{input valueBinding="name"}}
+          {{input valueBinding="name" placeholder="Header-Name"}}
         </td>
         <td class="value">
-          {{input valueBinding="value"}}
+          {{input valueBinding="value" placeholder="header/value"}}
         </td>
       </tr>
     {{/each}}
