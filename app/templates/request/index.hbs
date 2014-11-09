@@ -1,6 +1,8 @@
 <form>
   {{url-input protocol=protocol url=url}}
 
+  {{http-method-input method=method}}
+
   <fieldset>
     <legend>Headers</legend>
     {{request-header-input addHeader="addHeader" request=model}}

@@ -11,6 +11,7 @@ export default DS.Model.extend({
     defaultValue: 'http',
   }),
   url: DS.attr('string'),
+  method: DS.attr('string'),
   headers: DS.hasMany('request-header'),
   body: DS.attr('string'),
 
