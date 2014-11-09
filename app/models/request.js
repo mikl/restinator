@@ -12,6 +12,8 @@ export default DS.Model.extend({
   }),
   url: DS.attr('string'),
   headers: DS.hasMany('request-header'),
+  body: DS.attr('string'),
+
 
   addDefaultHeaders: function () {
     Object.keys(defaultHeaders).forEach(function (name) {
