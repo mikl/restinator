@@ -15,6 +15,22 @@ export default DS.Model.extend({
   headers: DS.hasMany('request-header'),
   body: DS.attr('string'),
 
+  /**
+   * Property to allow access to the body field.
+   */
+  accessBodyField: function() {
+    var method = this.get('method');
+
+    if (
+      method === 'POST' ||
+      method === 'PUT' ||
+      method === 'PATCH'
+    ) {
+      return true;
+    }
+
+    return false;
+  }.property('method'),
 
   addDefaultHeaders: function () {
     Object.keys(defaultHeaders).forEach(function (name) {

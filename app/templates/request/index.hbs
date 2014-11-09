@@ -8,10 +8,12 @@
     {{request-header-input addHeader="addHeader" request=model}}
   </fieldset>
 
+  {{#if accessBodyField}}
   <label class="request-body">
     <em>Body</em><br />
     {{textarea value=body cols=72 rows=7}}
   </label><br />
+  {{/if}}
 
   <button>
     Send
